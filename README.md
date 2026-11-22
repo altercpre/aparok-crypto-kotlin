@@ -2,13 +2,13 @@
 
 A Kotlin library for Ed25519 cryptographic operations, including account address encoding/decoding and signature verification.
 
-[![](https://jitpack.io/v/anyproto/any-crypto-kotlin.svg)](https://jitpack.io/#anyproto/any-crypto-kotlin)
+[![](https://jitpack.io/v/altercpre/aparok-crypto-kotlin.svg)](https://jitpack.io/#altercpre/aparok-crypto-kotlin)
 
 ## Features
 
-- Decode Anytype account addresses to Ed25519 public keys
+- Decode Aparok account addresses to Ed25519 public keys
 - Verify Ed25519 signatures
-- Encode Ed25519 public keys to Anytype account format
+- Encode Ed25519 public keys to Aparok account format
 - CRC16 checksum validation
 - Base58 encoding/decoding with StrKey format
 
@@ -38,7 +38,7 @@ dependencies {
 ### Decoding Account Address
 
 ```kotlin
-import com.anytype.crypto.AccountDecoder
+import com.aparok.crypto.AccountDecoder
 
 // Decode an account address to get the public key
 val accountAddress = "A8yCiRddQZbmRew2bGLkjKP1Q5mEBvs5sSoXxS3UynxJVTiZ"
@@ -52,7 +52,7 @@ println("Account: $address")
 ### Verifying Signatures
 
 ```kotlin
-import com.anytype.crypto.AccountDecoder
+import com.aparok.crypto.AccountDecoder
 import org.bouncycastle.util.encoders.Hex
 
 // Decode account to get public key
@@ -72,7 +72,7 @@ println("Signature valid: $isValid")
 ### Working with Ed25519 Keys Directly
 
 ```kotlin
-import com.anytype.crypto.Ed25519PubKey
+import com.aparok.crypto.Ed25519PubKey
 
 // Create from raw 32-byte public key
 val publicKeyBytes = ByteArray(32) // Your 32-byte Ed25519 public key
@@ -88,8 +88,8 @@ val isValid = pubKey.verify(data, signature)
 ### Complete Example
 
 ```kotlin
-import com.anytype.crypto.AccountDecoder
-import com.anytype.crypto.Ed25519PubKey
+import com.aparok.crypto.AccountDecoder
+import com.aparok.crypto.Ed25519PubKey
 import org.bouncycastle.crypto.generators.Ed25519KeyPairGenerator
 import org.bouncycastle.crypto.params.Ed25519KeyGenerationParameters
 import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters
@@ -133,12 +133,12 @@ fun main() {
 
 ### AccountDecoder
 
-- `decodeAccountAddress(address: String): PubKey` - Decodes an Anytype account address to a PubKey
+- `decodeAccountAddress(address: String): PubKey` - Decodes an Aparok account address to a PubKey
 
 ### PubKey Interface
 
 - `verify(data: ByteArray, sig: ByteArray): Boolean` - Verifies an Ed25519 signature
-- `account(): String` - Returns the Anytype account address representation
+- `account(): String` - Returns the Aparok account address representation
 
 ### Ed25519PubKey
 
