@@ -1,1 +1,1 @@
-rootProject.name = "any-crypto-kotlin"
+rootProject.name = "aparok-crypto-kotlin"

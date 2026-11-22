@@ -29,7 +29,7 @@ Add the dependency:
 
 ```kotlin
 dependencies {
-    implementation("com.github.anyproto:any-crypto-kotlin:1.0.0")
+    implementation("com.github.altercpre:any-crypto-kotlin:1.0.0")
 }
 ```
 

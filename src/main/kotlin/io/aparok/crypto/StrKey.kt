@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 import org.komputing.kbase58.decodeBase58
 import org.komputing.kbase58.encodeToBase58String

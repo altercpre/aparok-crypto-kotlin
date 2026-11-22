@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows

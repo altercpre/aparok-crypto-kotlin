@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 import org.bouncycastle.util.encoders.Hex
 import org.junit.jupiter.api.Test

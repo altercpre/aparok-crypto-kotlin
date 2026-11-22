@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 object AccountDecoder {
     

@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 import org.bouncycastle.crypto.params.Ed25519PublicKeyParameters
 import org.bouncycastle.crypto.signers.Ed25519Signer

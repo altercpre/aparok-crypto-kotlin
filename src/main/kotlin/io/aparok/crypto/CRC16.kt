@@ -1,4 +1,4 @@
-package com.anytype.crypto
+package io.aparok.crypto
 
 object CRC16 {
     private const val POLY = 0x1021
