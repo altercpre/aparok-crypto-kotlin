@@ -1,4 +1,4 @@
-# Any Crypto Kotlin
+# Aparok Crypto Kotlin
 
 A Kotlin library for Ed25519 cryptographic operations, including account address encoding/decoding and signature verification.
 
